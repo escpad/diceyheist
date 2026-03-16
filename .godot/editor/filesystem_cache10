@@ -1,3 +1,12 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1773634307
+::res://::1773643751
 icon.svg::CompressedTexture2D::7638170223200432035::1773634302::1773634308::1::::<><><>0<>0<>a32452f84023ce9803f1c7251efe9179<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://scenes/::1773643751
+game_manager.tscn::PackedScene::5137408283050596693::1773643760::0::1::::<><><>0<>0<><>::uid://bgffqg0gn65sj::::res://game_manager.gd
+game_manager.gd::GDScript::2818208146009354797::1773643532::0::1::::<>Node<><>0<>0<><>::
+loot.gd::GDScript::8208029607846908034::1773643739::0::1::::<>Area2D<><>0<>0<><>::
+loot.tscn::PackedScene::866731236629861291::1773643760::0::1::::<><><>0<>0<><>::uid://do7bbv8u5wet3::::res://loot.gd
+main.gd::GDScript::2259059970833836705::1773639275::0::1::::<>Node<><>0<>0<><>::
+main.tscn::PackedScene::9037883630971958749::1773643760::0::1::::<><><>0<>0<><>::uid://7gknge4fj25b::::res://main.gd<>uid://0ca7pg5cnki0::::res://player.tscn<>uid://ml3638obniel::::res://loot.tscn<>uid://cfgummuiu5f14::::res://scenes/game_manager.tscn
+player.gd::GDScript::483491862389525087::1773637739::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::1758907790349222681::1773643760::0::1::::<><><>0<>0<><>::uid://g5hbmvkptxhn::::res://player.gd<>uid://dg28svb4vwxdb::::res://icon.svg

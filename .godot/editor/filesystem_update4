@@ -4,3 +4,12 @@ res://player.gd
 res://loot.tscn
 res://loot.gd
 res://game.gd
+res://node.gd
+res://game_manger.tscn
+res://main.tscn
+res://game_manager.gd
+res://scenes/game_manager.tscn
+res://scenes/main.tscn
+res://scenes/loot.gd
+res://scenes/loot.tscn
+res://scenes/game_manager.gd

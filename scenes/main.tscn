@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://d11avgeptaoen"]
+
+[ext_resource type="Script" uid="uid://7gknge4fj25b" path="res://scenes/main.gd" id="1_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://0ca7pg5cnki0" path="res://scenes/player.tscn" id="2_lquwl"]
+[ext_resource type="PackedScene" uid="uid://ml3638obniel" path="res://scenes/loot.tscn" id="3_7mycd"]
+[ext_resource type="PackedScene" uid="uid://cfgummuiu5f14" path="res://scenes/game_manager.tscn" id="4_1bvp3"]
+
+[node name="Main" type="Node" unique_id=200249615]
+script = ExtResource("1_1bvp3")
+
+[node name="Player" parent="." unique_id=1440367460 instance=ExtResource("2_lquwl")]
+position = Vector2(430, 297)
+
+[node name="Loot" parent="." unique_id=1594519811 instance=ExtResource("3_7mycd")]
+position = Vector2(499, 300)
+
+[node name="GameManager" parent="." unique_id=1626494895 instance=ExtResource("4_1bvp3")]
+
+[node name="Loot2" parent="." unique_id=1601564896 instance=ExtResource("3_7mycd")]
+position = Vector2(422, 412)
+
+[node name="Loot3" parent="." unique_id=439571505 instance=ExtResource("3_7mycd")]
+position = Vector2(736, 146)
+
+[node name="Loot4" parent="." unique_id=848306633 instance=ExtResource("3_7mycd")]
+position = Vector2(221, 127)
+
+[node name="Loot5" parent="." unique_id=1974380217 instance=ExtResource("3_7mycd")]
+position = Vector2(813, 469)
+
+[node name="LootLabel" type="Label" parent="." unique_id=555046483]
+offset_left = 17.0
+offset_top = 17.0
+offset_right = 57.0
+offset_bottom = 40.0

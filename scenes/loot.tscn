@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ml3638obniel"]
 
-[ext_resource type="Script" uid="uid://do7bbv8u5wet3" path="res://loot.gd" id="1_joivg"]
+[ext_resource type="Script" uid="uid://do7bbv8u5wet3" path="res://scenes/loot.gd" id="1_joivg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2k6wd"]
 
