@@ -3,10 +3,16 @@
 [ext_resource type="Script" uid="uid://g5hbmvkptxhn" path="res://player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://dg28svb4vwxdb" path="res://icon.svg" id="2_i3pqv"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
+size = Vector2(8.666667, 8.666667)
+
 [node name="Player" type="CharacterBody2D" unique_id=1440367460]
 script = ExtResource("1_onrkg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2051912207]
+scale = Vector2(3, 3)
+shape = SubResource("RectangleShape2D_onrkg")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=863199185]
+scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_i3pqv")

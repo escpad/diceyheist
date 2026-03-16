@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ml3638obniel"]
+
+[ext_resource type="Script" uid="uid://do7bbv8u5wet3" path="res://loot.gd" id="1_joivg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2k6wd"]
+
+[node name="Loot" type="Area2D" unique_id=1594519811]
+scale = Vector2(2, 2)
+script = ExtResource("1_joivg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2093584158]
+shape = SubResource("RectangleShape2D_2k6wd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1761264208]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
