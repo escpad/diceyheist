@@ -17,10 +17,15 @@ func start_shake():
 
 var is_player_in_range = false
 @onready var game_manager = get_node("../GameManager")
-var dice_popup_scene = preload("res://dice_minigame.tscn")
+var dice_scene = preload("res://dice_minigame.tscn")
+var bar_scene = preload("res://bar_minigame.tscn")
 
 func open_dice_minigame():
-	var popup = dice_popup_scene.instantiate()
+	var popup = dice_scene.instantiate()
+	add_child(popup)
+	
+func open_bar_minigame():
+	var popup = bar_scene.instantiate()
 	add_child(popup)
 	
 func roll_d6():
@@ -39,15 +44,14 @@ func _process(delta: float) -> void:
 		)
 	
 	if Input.is_action_just_pressed("Interact") and is_player_in_range:
-		open_dice_minigame()
-		#var temp = roll_d6()
-		#if(temp > 5):
-			#print(str(temp) + ": Steal success")
-			#game_manager.add_loot(30)
-			#queue_free()
-		#else:
-			#print(str(temp) + ": Steal failed")
+		var temp = roll_d6()
+		if(temp >= 3):
+			print(str(temp) + ": DICE")
+			open_dice_minigame()
+		else:
+			print(str(temp) + ": BAR")
 			#start_shake()
+			open_bar_minigame()
 
 
 func _on_body_entered(body: Node2D) -> void:

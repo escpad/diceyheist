@@ -9,8 +9,9 @@ func _ready():
 	title_label.text = "Risk Roll"
 	result_label.text = "Press Roll"
 	roll_button.pressed.connect(_on_roll_button_pressed)
-
+	
 func _on_roll_button_pressed():
+	roll_button.visible = false
 	var roll = randi_range(1, 6)
 	result_label.text = "You rolled: %d" % roll
 	if roll <= 2:

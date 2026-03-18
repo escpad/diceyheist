@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://8yk550nlwlqf"]
+
+[ext_resource type="Script" uid="uid://cph6b2invbknw" path="res://bar_minigame.gd" id="1_4ixi6"]
+
+[node name="BarMinigame" type="CanvasLayer" unique_id=1061273348]
+script = ExtResource("1_4ixi6")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=623366353]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.6627451, 0.38431373, 0.5019608, 0.7058824)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1827715888]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer" unique_id=1918027778]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer" unique_id=391609810]
+layout_mode = 2
+
+[node name="TitleLabel" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=2041376794]
+layout_mode = 2
+
+[node name="BarBackground" type="ColorRect" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=290150306]
+custom_minimum_size = Vector2(300, 30)
+layout_mode = 2
+color = Color(0.3515629, 0.3515629, 0.35156286, 1)
+
+[node name="Marker" type="ColorRect" parent="CenterContainer/PanelContainer/VBoxContainer/BarBackground" unique_id=145089604]
+layout_mode = 0
+offset_right = 20.0
+offset_bottom = 30.0
+
+[node name="ResultLabel" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=794504043]
+layout_mode = 2
+text = "Press Stop"
+horizontal_alignment = 1
+
+[node name="StopButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=931138728]
+layout_mode = 2
+text = "Stop"

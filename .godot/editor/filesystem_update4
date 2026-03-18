@@ -3,3 +3,6 @@ res://dice_minigame.tscn
 res://dice_minigame.gd
 res://scenes/player.tscn
 res://scenes/loot.gd
+res://bar_minigame.tscn
+res://bar_minigame.gd
+res://scenes/loot.tscn

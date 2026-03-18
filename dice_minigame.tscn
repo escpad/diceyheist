@@ -13,7 +13,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 6
 size_flags_vertical = 6
-color = Color(0.24313726, 0.24313726, 0.24313726, 0.29411766)
+color = Color(0.6634119, 0.3856815, 0.50185174, 0.7058824)
 
 [node name="CenterContainer" type="CenterContainer" parent="." unique_id=332952245]
 anchors_preset = 8

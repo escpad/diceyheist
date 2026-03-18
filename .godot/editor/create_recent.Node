@@ -1,12 +1,12 @@
-Label
 Button
-LimitAngularVelocityModifier3D
-VBoxContainer
-Panel
-CenterContainer
+Label
 ColorRect
+VBoxContainer
 PanelContainer
+CenterContainer
 CanvasLayer
+LimitAngularVelocityModifier3D
+Panel
 Node
 Sprite2D
 CollisionShape2D
